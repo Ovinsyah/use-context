@@ -1,0 +1,9 @@
+@import './color.scss';
+code{
+  font-family: 'Tajawal', sans-serif;
+}
+
+a{
+  color: $text;
+  text-decoration: none;
+}

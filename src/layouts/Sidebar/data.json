@@ -1,0 +1,85 @@
+[
+  {
+    "title": "LAPORAN",
+    "list":[
+      {
+        "id": 1,
+        "name": "Detil Penjualan",
+        "path": "sales/detail"
+      },
+      {
+        "id": 2,
+        "name": "Ringkasan Penjualan",
+        "path": "sales/detail"
+      },
+      {
+        "id": 3,
+        "name": "Penjualan Harian",
+        "path": "sales/detail"
+      },
+      {
+        "id": 4,
+        "name": "Jenis Order",
+        "path": "sales/detail"
+      },
+      {
+        "id": 5,
+        "name": "Laporan Bahan",
+        "path": "sales/detail"
+      },
+      {
+        "id": 6,
+        "name": "Laporan Promosi",
+        "path": "sales/detail"
+      },
+      {
+        "id": 7,
+        "name": "Laporan Kasir",
+        "path": "sales/detail"
+      }
+    ]
+  },
+  {
+    "title": "PRODUK",
+    "list":[
+      {
+        "id": 1,
+        "name": "Daftar Produk",
+        "path": "product/list"
+      },
+      {
+        "id": 2,
+        "name": "Kategori",
+        "path": "product/category"
+      }
+    ]
+  },
+  {
+    "title": "INVENTORY",
+    "path": "inventory"
+  },
+  {
+    "title": "PROMOSI",
+    "path": "promotion"
+  },
+  {
+    "title": "PENGATURAN",
+    "list":[
+      {
+        "id": 1,
+        "name": "Jenis Order",
+        "path": "settings"
+      },
+      {
+        "id": 2,
+        "name": "Meja",
+        "path": "settings"
+      },
+      {
+        "id": 3,
+        "name": "Pegawai",
+        "path": "settings"
+      }
+    ]
+  }
+]

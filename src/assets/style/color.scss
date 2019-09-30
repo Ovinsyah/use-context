@@ -1,0 +1,21 @@
+$primary: #84BD71;
+$secondary: #F2994A;
+$gray: #767676;
+$dark: #1B1C1D;
+$danger: #dB2828;
+$warning: #F2711C;
+$black: #000000;
+$white: #FFFFFF;
+$text: #2C2C2C;
+
+:export{
+  primary: $primary;
+  secondary: $secondary;
+  gray: $gray;
+  dark: $dark;
+  danger: $danger;
+  warning: $warning;
+  black: $black;
+  white: $white;
+  text: $text;
+}

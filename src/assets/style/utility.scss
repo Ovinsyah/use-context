@@ -1,0 +1,191 @@
+@import 'color.scss';
+$marginSize: 0px, 5px, 10px, 20px, 30px, 50px;
+
+$positionMargin: '';
+$positionPadding: '';
+
+.margin{
+  @for $i from 1 through 4 {
+    @if $i == 1{
+      $positionMargin: 'top' !global;
+    }
+    @else if $i == 2{
+      $positionMargin: 'bottom' !global;
+    }
+    @else if $i == 3{
+      $positionMargin: 'left' !global;
+    }
+    @else if $i == 4{
+      $positionMargin: 'right' !global;
+    }
+
+    &-#{$positionMargin}{
+      @for $j from 0 through 5 {
+        &-#{$j} {
+          @if $positionMargin == 'top'{
+            margin-top: nth($marginSize, $j + 1);
+          }
+          @else if $positionMargin == 'bottom'{
+            margin-bottom: nth($marginSize, $j + 1);
+          }
+          @else if $positionMargin == 'left'{
+            margin-left: nth($marginSize, $j + 1);
+          }
+          @else if $positionMargin == 'right'{
+            margin-right: nth($marginSize, $j + 1);
+          }
+        }
+      }
+    }
+  }
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      margin: nth($marginSize, $i + 1);
+    }
+  }
+}
+
+.padding{
+  @for $i from 1 through 4 {
+    @if $i == 1{
+      $positionPadding: 'top' !global;
+    }
+    @else if $i == 2{
+      $positionPadding: 'bottom' !global;
+    }
+    @else if $i == 3{
+      $positionPadding: 'left' !global;
+    }
+    @else if $i == 4{
+      $positionPadding: 'right' !global;
+    }
+    &-#{$positionPadding}{
+      @for $j from 0 through 5 {
+        &-#{$j} {
+          @if $positionPadding == 'top'{
+            padding-top: nth($marginSize, $j + 1);
+          }
+          @else if $positionPadding == 'bottom'{
+            padding-bottom: nth($marginSize, $j + 1);
+          }
+          @else if $positionPadding == 'left'{
+            padding-left: nth($marginSize, $j + 1);
+          }
+          @else if $positionPadding == 'right'{
+            padding-right: nth($marginSize, $j + 1);
+          }
+        }
+      }
+    }
+  }
+  @for $i from 0 through 5 {
+    &-#{$i} {
+      padding: nth($marginSize, $i + 1);
+    }
+  }
+}
+
+.align{
+  &-left{
+    text-align: left;
+  }
+  &-right{
+    text-align: right;
+  }
+  &-center{
+    text-align: center;
+  }
+  &-justify{
+    text-align: justify;
+  }
+}
+
+.float{
+  &-left{
+    float: left;
+  }
+  &-right{
+    float: right;
+  }
+}
+
+.weight{
+  &-bold{
+    font-weight: bold;
+  }
+  &-semibold{
+    font-weight: 500;
+  }
+  &-thin{
+    font-weight: 300;
+  }
+}
+
+.background{
+  &-primary{
+    background: $primary;
+  }
+  &-secondary{
+    background: $secondary;
+  }
+  &-gray{
+    background: $gray;
+  }
+  &-dark{
+    background: $dark;
+  }
+  &-danger{
+    background: $danger;
+  }
+  &-warning{
+    background: $warning;
+  }
+  &-black{
+    background: $black;
+  }
+  &-white{
+    background: $white;
+  }
+}
+
+.color{
+  &-primary{
+    color: $primary;
+  }
+  &-secondary{
+    color: $secondary;
+  }
+  &-gray{
+    color: $gray;
+  }
+  &-dark{
+    color: $dark;
+  }
+  &-danger{
+    color: $danger;
+  }
+  &-warning{
+    color: $warning;
+  }
+  &-black{
+    color: $black;
+  }
+  &-white{
+    color: $white;
+  }
+}
+
+.width{
+  &-25{
+    width: 25%;
+  }
+  &-50{
+    width: 50%;
+  }
+  &-75{
+    width: 75%;
+  }
+  &-100{
+    width: 100%;
+  }
+}
